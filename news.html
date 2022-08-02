@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News</title>
+  <style type="text/css">
+* {
+ box-sizing: border-box;
+}
+header, footer {
+            height: 70px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: teal;
+        }
+header {
+            justify-content: flex-end;
+            background-color: thistle;
+        }
+        header h1 {
+            color: navy;
+        }
+      nav  ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+       nav li {
+            list-style: none;
+            height: 60px;
+            line-height: 60px;
+            width: 100px;
+            text-align: center;
+       }
+.column {
+ float: left;
+ width: 50%;
+ padding: 40px;
+ height:550px; 
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+img{
+ border-radius: 100%;
+}
+
+</style>
+</head>
+<body>
+ <header>
+  <h1>HAYAT FOUNDATION</h1>
+  <nav>
+      <ul>
+          <li><a href="home.html"> HOME</a></li>
+          <li><a href="account.html">ACCOUNT</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="login.html">LOG IN</a></li>
+          <li><a href="home.html">LOG OUT</a></li>
+      </ul>
+  </nav>
+</header>
+  
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <img src="ala.jpg" alt="profile-picture" style="width:40%"/>
+    <h2>Alain______IB</h2>
+    <strong><p>CEO & Founder HAYAT FOUNDATION</p></strong>
+    <strong><p>University of Rwanda</p></strong>
+    <h3>HAYAT FOUNDATION TEAM</h3>
+    <ul>
+        <li>Communication</li>
+        <li>Data Analysis anda System</li>
+        <li>Website Manager</li>
+    </ul>
+
+  </div>
+  <div class="column" style="background-color:#bbb;">
+  <p>1STEP LIVE</p>
+    <h2>OUR MISSION</h2>
+    <ol>
+        <li>Save For Future Education and Poor Eraducation</li>
+        <li>Create Rwandan Children with Good Education and Knowledge.</li>
+        <li>Take Care Atleast 100% Rwandan Chrildren overcome from it.</li>
+    </ol>
+    <label for="story">Your Seggestion</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="50">
+</textarea>
+<p>Email<input type="text" placeholder="enter your email for your seggestion" size="50"></p>
+<button onclick="myFunction()">Save</button>
+<p id="demo"></p>
+  </div>
+</div>
+<footer>
+  <center>
+ <p><strong>Alain Hlavin</strong></p>
+<span>copyright © 2022</span>
+</center>
+</footer>
+</body>
+</html>

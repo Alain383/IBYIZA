@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            height: calc(100% - 120px);
+           
+        }
+        header, footer {
+            height: 60px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: teal;
+        }
+        header {
+            justify-content: flex-end;
+            background-color: thistle;
+        }
+        header h1 {
+            color: navy;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+            height: 60px;
+            line-height: 60px;
+            width: 100px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        aside {
+            width: 20%;
+            height: 100%;
+            background-color: ghostwhite;
+        }
+        aside img{
+            border-radius: 100%;
+        }
+        .right {
+            width: 80%;
+            height: 100%;
+        }
+        section {
+            height: 537px;
+            border: 1px solid teal;
+            background-color: ghostwhite;
+        }
+        .side-menu{
+            cursor: pointer;
+        }
+
+         /* inbox section */
+
+        .container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+#selection{
+    margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  
+}
+/* money */
+table, th, td {
+  border: 1px solid black;
+}
+/* help */
+button {
+    background-color: burlywood;
+    color: teal;
+    width: 70px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+        </style>
+</head>
+<body>
+    <header>
+        <h1>HAYAT FOUNDATION</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"> HOME</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+                <li><a href="home.html">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            
+        
+            <center>
+                <img src="haya.jpg" width="200" height="200">
+                 <h2 class="side-menu" onclick="profile()">PROFILE</a></h2>
+                    <h2 class="side-menu" onclick="inbox();"> INBOX</h2>
+                   <h2 class="side-menu" onclick="money();">MONEY</h2> 
+                    <h2 class="side-menu" onclick="setting();">SETTING</h2>
+                   <h2 class="side-menu" onclick="help();"> HELP</h2>
+                </center>  
+        </aside>
+        <div class="right">
+            <section>
+               <center><h3>Alain Hlavin</h3>
+            <img src="cat.jpg" width="100" height="100" style="border-radius:100%;">
+            </center>
+               
+               <div id="selection"></div>
+            </section>
+           </div>
+    </main>
+    <footer>
+        <center>
+            <h3><span>Alain Hlavin</span></h3>
+        <span>copyright © 2022</span>
+    </center>
+
+    </footer>
+
+    <script>
+
+        function inbox(){
+            document.getElementById("selection").innerHTML=`<h2>Chat Messages to Hayat Foundation</h2>
+
+<div class="container">
+  <img src="cat.jpg" alt="cat" style="width:100%;">
+  <p>Hello. I need help?</p>
+  <p> My Name is Alain Hlavin kindly contact me <a href="+250787542277">+250787542277</a></p>
+  <span class="time-right">8:00</span>
+</div>
+
+<div class="container darker">
+  <img src="haya.jpg" alt="cat" class="right" style="width:100%;">
+  <p>Hey! Thanks for your request we are on way to call you please be patient a moment!</p>
+  <span class="time-left">8:01</span>
+</div>
+<div class="container">
+    <img src="cat.jpg" alt="cat" style="width:100%;">
+    <p>Thanks i'm waiting your help!</p>
+    <span class="time-right">8:02</span>
+</div>`;
+        }
+        function money(){
+            document.getElementById("selection").innerHTML=` <table>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Tatal</th>
+        </tr>
+        <tr>
+            <td>Alain</td>
+            <td>Hlavin</td>
+            <td>500 Rwf</td>
+            <td>12/07/2022</td>
+            <td>500 rwf</td>
+        </tr>
+        <tr>
+            <td>Alain</td>
+            <td>IBYIZA</td>
+            <td>500 Rwf</td>
+            <td>1/07/2022</td>
+            <td>500 rwf</td>
+        </tr>
+    </table>
+`
+        }
+        function profile(){
+            document.getElementById("selection").innerHTML=`
+            <p>First name:....</p>
+            <p>Last name :.....</p>
+            <p>Date of Birth:... </p>
+            <p>Email:.....</p>
+            <p>Phone number:....</p>
+            <p>Gender:... </p>
+            <p>Province:....</p>
+            <p>City:....</p>
+            <p>District:...</p>
+            <p>Sector :.....</p>
+            <p>Cell:... </p>
+            <p>Village:....</p>
+            <p>Guadian name:...</p>
+            <p>Guadian number:.....</p>
+            <p>Tatal money saved:....  rwf</p>
+            <p><strong>"Impress impossible that will be possible but trust the process!"</strong></p>
+            `
+        }
+        function setting(){
+            document.getElementById("selection").innerHTML=`
+            <ol>
+                <li> <a href="#">Update profile</a></li>
+                <li><a href="#">ChangeUsername</a></li>
+                <li><a href="#">Delete Account</a></li>
+                </ol>
+            `
+        }
+        function help(){
+            document.getElementById("selection").innerHTML=`
+            <p><strong>Welcome Sir/Madam<strong></p>
+                <span><center><strong>Contact us
+                    </strong></center></span>
+                    <ol>
+                        <li>Twitter:Hayat</li>
+                        <li>Instagram:Hayat</li>
+                        <li>Facebook:Hayat</li>
+                        <li>Whatsapp:+250787542277</li>
+                        </ol>
+                        <span><stron>Your suggetion or Question</strong></span>
+                        <textarea id="story" name="story" rows="5" cols="50"></textarea>
+                        <p>Email<input type="text" placeholder="enter your email for your seggestion" size="50"></p>
+                         <button onclick="myFunction()">Save</button>
+            `
+
+        }
+    </script>
+</body>
+</html>

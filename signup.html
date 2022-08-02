@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: bisque;
+}
+header, footer {
+            height: 60px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: teal;
+}
+        
+        header {
+            justify-content: flex-end;
+            background-color: thistle;
+        }
+        header h1 {
+            color: navy;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+            height: 60px;
+            line-height: 60px;
+            width: 100px;
+            text-align: center;
+        }
+input[type=text], input[type=password],input[type=date] {
+  width: 600px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  padding-left: 30px;
+  font-weight: 400;
+}
+label{
+    display: inline-block;
+        width: 110px;
+        color: black;
+ 
+}
+      button[type=submit]{
+        background-color: thistle ;
+        color: white;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      button[type=submit]:hover{
+        background-color: burlywood;
+        color: red;
+      }
+   
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>HAYAT FOUNDATION</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"> HOME</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+                <li><a href="home.html">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="post" action="./signup.php" >
+    <h2 style="text-align: center">Please fill the form to create an Account</h2>
+  <label for="fname">First name:</label>
+  <input type="text" id="first_name" name="fname" placeholder="enter your first name" required><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="last_name" name="lname" placeholder="enter your last name"><br>
+  <label for="date">Date of Birth:</label>
+  <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+  <label for="id_number">ID number:</label>
+  <input type="text" id="id_number" name="id_number" placeholder="enter your id number" required><br>
+  <label for="phone_number">Phone number:</label>
+  <input type="text" id="phone_number" name="phone_number" placeholder="+250"><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" placeholder="enter your email" required><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="enter your password" required><br>
+  <label for="comfirm_password">comfirm Password:</label>
+  <input type="password" id="comfirm_password" name="comfirm_password" placeholder="comfirm password" required><br>
+  <!--<label for="gender">Gender:</label>
+  <input type="radio" id="male" name="male" value="male">
+  <label for="female">Male</label>
+  <input type="radio" id="female" name="female" value="female">
+  <label for="female">Female</label><br>-->
+  <label for="province">Province:</label>
+  <input type="text" id="province" name="province" placeholder="enter your province" required><br>
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city" placeholder="home city"><br><br>
+  <label for="district">District:</label>
+  <input type="text" id="district" name="district" placeholder="enter your district" required><br>
+  <label for="sector">Sector:</label>
+  <input type="text" id="sector" name="sector" placeholder="enter your sector" required><br>
+  <label for="cell">Cell:</label>
+  <input type="text" id="cell" name="cell" placeholder="enter your cell" required><br>
+  <label for="village">Village:</label>
+  <input type="text" id="village" name="village" placeholder="enter your village" required><br>
+  <label for="guadian">Guadian name:</label>
+  <input type="text" id="guadian_name" name="guadian_name" placeholder="enter your guadian name" required><br>
+  <label for="lname">Guadian number:</label>
+  <input type="text" id="guadian_number" name="guadian_number" placeholder="enter your guadian number" required><br>
+  <button type="submit">submit</button>
+</form>
+<footer>
+    <center>
+        <h4><span>Alain Hlavin</span></h4>
+    <span>copyright © 2022</span>
+</center>
+
+</footer>
+
+
+</body>
+</html>

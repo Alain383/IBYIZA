@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            height: calc(100% - 120px);
+           
+        }
+        header, footer {
+            height: 60px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: teal;
+        }
+        header {
+            justify-content: flex-end;
+            background-color: thistle;
+        }
+        header h1 {
+            color: navy;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+            height: 60px;
+            line-height: 60px;
+            width: 100px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        aside {
+            width: 80%;
+            height: 100%;
+            background-color: ghostwhite;
+        }
+        aside img{
+            border-radius: 50%;
+        }
+     section img{
+            border-radius: 50%;
+        }
+        .join-button{
+            background-color: rgb(186, 216, 228);
+            color: blueviolet;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin-left: 200px;
+            border-radius: 20px;
+            padding-top: 7px;
+        padding-right: 10px;
+         padding-bottom: 0px;
+        padding-left: 10px;
+            cursor: pointer;
+        }
+        .join-button:hover{
+         background-color: rgb(202, 7, 105); 
+         color: white;
+        }
+    
+       div section div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+        .right {
+            width: 30%;
+            height: 100%;
+        }
+        section {
+            height: 530px;
+            border: 1px solid teal;
+            background-color: ghostwhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HAYAT FOUNDATION</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"> HOME</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+                <li><a href="home.html">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+           
+            <center>
+                <h2>WELCOME TO HAYAT FOUNDATION SAVING </h2> </center>
+            <blockquote><strong>
+                "Start where you are, use what you have, do what you can !"
+            </strong> </blockquote> 
+            <center>  <h3>1Step live</h3>
+                <img src="haya.jpg" width="200" height="200">
+                <p><strong>As Rwandans let support young children ourself, this will help us to create bright future youth with better principles</strong></p>
+    
+                 <p> Save For Future Education and Poor Eraducation,....
+            Create Rwandan Children with Good Education and Knowledge,....
+                 Take Care Atleast 100% Rwandan Chrildren overcome from it.</p> 
+                 <p1><strong> We still waiting to donate more fund we are not yet started</strong></p1>
+    
+            </center>  
+           <center> <div class="join-button"><a href="signup.html">JOIN</a> </div> </center>
+        </aside>
+        <div class="right">
+            <section>
+                <span><strong> Housand Hills Rwanda We offer better Vision</strong></span>
+                <blockquote cite="">Whatever you  are be a good one and love is the chain to lock a child to its parent.
+                </blockquote>
+                <cite style="float: right;"><strong>HAYAT Group</strong></cite>
+                <img src="children.jpg" alt="child" width="100" height="100">
+          <video src="rdn.mp4" width="400" height="200" controls></video>
+                <div>
+           <img src="im.jpg" width="150" height="150">
+           
+        </div>
+
+            </section>
+           </div>
+    </main>
+    <footer>
+        <center>
+            <h4><span>Alain Hlavin</span></h4>
+        <span>copyright © 2022</span>
+    </center>
+
+    </footer>
+</body>
+</html>
